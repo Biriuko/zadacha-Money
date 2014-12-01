@@ -1,0 +1,20 @@
+//Написать программу, которая преобразует введенное с клавиатуры дробное число в денежный формат.
+//Например, число 12,5 должно быть преобразовано к виду 12грн 50 коп.
+
+#include <iostream>
+using namespace std;
+
+void main()
+{
+
+	double number, grn, kop;
+
+	cout << "Enter your number \n";
+	cin >> number;
+
+	grn = int(number);
+	kop = (number - grn)*100;
+
+	cout << grn << " grn  " << kop << " kop  \n";
+	system ("pause");
+}
