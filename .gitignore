@@ -9,12 +9,13 @@ void main()
 
 	double number, grn, kop;
 
-	cout << "Enter your number \n";
+	cout << "Enter your number: " << endl;
 	cin >> number;
 
 	grn = int(number);
-	kop = (number - grn)*100;
+	kop = (number - grn) * 100;
 
 	cout << grn << " grn  " << kop << " kop  \n";
+	
 	system ("pause");
 }
